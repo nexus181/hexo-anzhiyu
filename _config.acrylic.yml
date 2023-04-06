@@ -1,0 +1,235 @@
+# 站点设置
+site:
+  name: Rot               # 左上角首页名称
+  icon: /img/avatar.webp  # 页脚的icon
+  icp:                    # ICP
+  siteIcon: /img/avatar.webp # 主页的icon
+
+# 导航栏
+nav:
+#导航栏左侧
+  left:
+    enable: true
+    menu:
+      我的:
+        博客:
+          icon: /img/avatar.webp
+          url: /
+# 导航栏内容
+  menu:
+    # 文库:
+    #   url: false
+    #   child:
+    #     文章列表:
+    #       url: /archives/
+    #       icon: fas fa-box-archive
+    #     全部分类:
+    #       url: /categories/
+    #       icon: fas fa-cube
+    #     全部标签:
+    #       url: /tags/
+    #       icon: fas fa-tags
+    # 友链:
+    #   url: false
+    #   child:
+    #     友链鱼塘:
+    #       url: /fcircle/
+    #       icon: fas fa-fish-fins
+    #     友情链接:
+    #       url: /links/
+    #       icon: fas fa-user-group
+    #     宝藏博主:
+    #       url: javascript:travelling()
+    #       icon: fas fa-bus
+
+# 导航栏右侧快捷菜单
+  right: # @todo 允许用户自定义
+    travellings: true   #开往
+    random: true        #
+    search: false       #刷新按钮
+    console: true       #控制台
+
+# heo式顶部一大坨
+hometop:
+  bbtime: false
+  banner:
+    title: 分享设计<br>与科技生活
+    url: blog.zhheo.com
+    icon:
+      AE:
+        img: /img/icon/ae.png
+        color: '#989bf8'
+      Sketch:
+        img: /img/icon/Sketch.png
+        color: '#ffffff'
+      Docker:
+        img: /img/icon/docker.png
+        color: '#57b6e6'
+      ps:
+        img: /img/icon/ps.png
+        color: '#4082c3'
+      FinalCutPro:
+        img: /img/icon/FinalCutPro.png
+        color: '#ffffff'
+      Python:
+        img: /img/icon/Python.png
+        color: '#ffffff'
+      Swift:
+        img: /img/icon/Swift.png
+        color: '#eb6840'
+      Principle:
+        img: /img/icon/Principle.png
+        color: '#8f55ba'
+      illustrator:
+        img: /img/icon/illustrator.png
+        color: '#f29e39'
+      CSS3:
+        img: /img/icon/CSS3.png
+        color: '#2c51db'
+      JS:
+        img: /img/icon/JS.png
+        color: '#f7cb4f'
+      Git:
+        img: /img/icon/git.png
+        color: '#df5b40'
+
+  categoryGroup:
+    G1:
+      name: Acrylic
+      icon: fas fa-dove
+      url: /tags/Acrylic/
+    G2:
+      name: 热门文章
+      icon: fas fa-burn
+      url: /tags/热门/
+    G3:
+      name: 实用教程
+      icon: fas fa-book
+      url: /tags/教程/
+
+  recommendList:
+    sup: 置顶文章
+    title: 让Acrylic成为您的Hexo主题
+    url: /
+    img: /img/acrylic.png
+    color: '#006a73'
+
+# 个人卡片
+aside:
+  card:
+    content: 这有关于<b>开发</b>、<b>技术</b>相关的问题和看法，还有对于动漫的一些<b>杂评</b>。<br>相信你可以在这里找到对你有用的知识和教程。
+    information:
+      Github:
+        icon: fa-brands fa-github
+        url: https://github.com/rootlexblog
+      Mail:
+        icon: fa-solid fa-envelope
+        url: mailto:a@nalex.top
+    button:
+      text: 个人主页
+      url: /
+# 建站时间
+  analytics:
+    runtime: '2021-12-12 00:00:00'
+
+# 页脚
+footer:
+  information:
+    left:
+      Github:
+        icon: fa-brands fa-github
+        url: /
+      Mail:
+        icon: fa-solid fa-envelope
+        url: /
+    right:
+      网易云:
+        icon: fa-solid fa-music
+        url: /
+      bilibili:
+        icon: fa-brands fa-bilibili
+        url: /
+
+  group:
+    导航:
+      文章归档: /archives/
+      文章分类: /categories/
+      文章标签: /tags/
+      友链: /link/
+    服务:
+      51la统计: https://51.la/
+      百度统计: https://tongji.baidu.com/
+      TianliCDN: https://ql.tianli0.top/
+    Acrylic:
+      主题官网: https://acrylic.zhheo.com/
+      Github: https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic
+      Heo: https://blog.zhheo.com/
+    推荐友链:
+      Heo: https://blog.zhheo.com/
+      Akilar: https://akilar.top
+
+  randomlink: false
+
+# 文章页默认设置
+post:
+  default:
+    cover: /img/hello.jpg
+    locate: 北京
+    copyright: 原创
+    excerpt: 100
+  award:
+    enable: false
+    wechat:
+    alipay:
+    url:
+
+# 404
+errorpage:
+  img: /img/acrylic.png
+  text: =awa= 页面走丢了
+  recommendList: true
+
+# 懒加载
+lazyload:
+  enable: false
+  placeholder: /img/acrylic.png
+  errorimg: /img/acrylic.png
+
+# 加载动画
+loading:
+  enable: false
+  pace: false
+
+# 第三方设置
+thirdparty:
+  wordcount: false
+
+# 评论
+comment:
+  enable: false
+  twikoo:
+    envId:
+
+# 插入代码到头部 </head> 之前 和 底部 </body> 之前
+# 插入额外代码 如：统计，广告等
+extends: 
+  head: # 在head中插入
+    # - <script></script>
+  body: # 在body中插入
+
+# 非必要勿动
+cdn:
+  head:
+    pacejs: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/pace/1.2.4/pace.min.js
+    fontawesomecss: https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/all.min.css
+    snackbarcss: /lib/snackbar.min.css
+    qrcodejs: /lib/qrcode.min.js
+    twikoojs: https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js
+  body:
+    swipercss: /lib/swiper.min.css
+    pjaxjs: /lib/pjax.min.js
+    lazyloadjs: /lib/lazyload.min.js
+    snackbarjs: /lib/snackbar.min.js
+    viewimagejs: /lib/view-image.min.js
+    waterfalljs: /lib/waterfall.min.js
+    swiperjs: /lib/swiper.min.js
